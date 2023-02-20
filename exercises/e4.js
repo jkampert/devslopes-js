@@ -9,9 +9,7 @@
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
 
-function splitFirstAndLastNames(str) {
-  return str.split(' ');
-}
+const splitFirstAndLastNames = (str) => str.split(' ');
 
 
 /** =========================
@@ -20,9 +18,7 @@ function splitFirstAndLastNames(str) {
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
 
-const personAge = function(personObject) {
-  return personObject.age;
-}
+const personAge = (personObject) => personObject.age;
 
 
 /** =========================
@@ -32,9 +28,8 @@ const personAge = function(personObject) {
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
 
-const isNameInArray = (arr, name) => {
-  return arr.includes(name);
-}
+const isNameInArray = (arr, name) => arr.includes(name);
+
 
 
 /** =========================
@@ -44,14 +39,14 @@ const isNameInArray = (arr, name) => {
  * Hint: There are two functions to refactor.
  */
 
-const logSecondsUpToMax = function (max) {
-  let i = 0;
-  const timer = setInterval(function() {
-    if (i < max) {
-      console.log(i++);
-    }
-  }, 1000);
-  return true;
+const logSecondsUpToMax = (max) => {
+    let i = 0;
+    const timer = setInterval(function() {
+        if (i < max) {
+            console.log(i++);
+        }
+    }, 1000);
+    return true;
 }
 
 
@@ -64,9 +59,9 @@ const logSecondsUpToMax = function (max) {
 
 // Do not delete or change the lines beneath
 const f = {
-  splitFirstAndLastNames: splitFirstAndLastNames || undefined,
-  personAge: personAge || undefined,
-  isNameInArray: isNameInArray || undefined,
-  logSecondsUpToMax: logSecondsUpToMax || undefined,
+    splitFirstAndLastNames: splitFirstAndLastNames || undefined,
+    personAge: personAge || undefined,
+    isNameInArray: isNameInArray || undefined,
+    logSecondsUpToMax: logSecondsUpToMax || undefined,
 }
 export { f }
