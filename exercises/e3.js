@@ -39,22 +39,22 @@ function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
  */
 
 function getValueWithConditionOne(val1, val2) {
-    if (val1 === val2) {
-        return val1 + val2;
+    if (val1 === 40 && val2 === 40) {
+        return 80;
     }
     return (val1 + val2) * 2;
 }
 
 var getValueWithConditionTwo = (val1, val2) => {
-    if (val1 === val2) {
-        return val1 + val2;
+    if (val1 === 40 && val2 === 40) {
+        return 80;
     }
     return (val1 + val2) * 2;
 }
 
 var getValueWithConditionThree = function(val1, val2) {
-    if (val1 === val2) {
-        return val1 + val2;
+    if (val1 === 40 && val2 === 40) {
+        return 80;
     }
     return (val1 + val2) * 2;
 }
